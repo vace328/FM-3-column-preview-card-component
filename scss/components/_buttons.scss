@@ -1,0 +1,26 @@
+.btn {
+    text-decoration: none;
+    background-color: $bg_color_neutral;
+    text-transform: capitalize;
+    width: 146px;
+    text-align: center;
+    display: block;
+    padding: 16px 0;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.card:nth-of-type(1) .btn {
+    color: $bg_color_1;    
+}
+.card:nth-of-type(2) .btn {
+    color: $bg_color_2;
+}
+.card:nth-of-type(3) .btn {
+    color: $bg_color_3;
+}
+
+.card .btn:active {
+    background-color: unset;
+    border: 2px solid $bg_color_neutral;
+    color: $bg_color_neutral;
+}

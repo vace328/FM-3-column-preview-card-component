@@ -2,7 +2,6 @@
 ------------------------------------------------------------------------------*/
 @import "base/reset";
 @import "base/variables";
-@import "base/colors";
 @import "base/typography"; 
 
 /*----------  components
@@ -17,11 +16,11 @@ body {
     box-sizing: border-box;
     background-color: $bg_color_neutral;
     min-height: 100vh;
-    // width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 42px 0px 0px 0px;
 }
 h1 {
     visibility: hidden;
@@ -29,40 +28,44 @@ h1 {
     z-index: 0;
 }
 .cards-container {
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
-    // width: 920px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+    max-width: 918px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    // margin: auto 0;
 }
 .card {
-    max-width: 310px;
-    flex: 1 1 310px;
-    // padding: 48px 50px;
+    min-height: 500px;
+    max-width: 306px;
+    flex: 1 1 306px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .card:nth-of-type(1) {
-    background-color: $bg_color_1;    
+    background-color: $bg_color_1;
+    // border-top-left-radius: 8px;    
+    // border-bottom-left-radius: 8px;    
 }
 .card:nth-of-type(2) {
     background-color: $bg_color_2;    
 }
 .card:nth-of-type(3) {
-    background-color: $bg_color_3;    
+    background-color: $bg_color_3; 
+    // border-top-right-radius: 8px;    
+    // border-bottom-right-radius: 8px;   
 }
 .card-item {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 .icon-container.card-item {
-    margin-top: 48px;
+    padding-top: 48px;
 }
 .btn-wrapper.card-item {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
+    margin-top: auto;
 }
 .icon-container {
     height: 40px;
@@ -72,16 +75,28 @@ img {
     height: 100%;
 }
 h2 {
-    font-size: $fsize_heading;
     color: $text_color_lvl_2;
-    font-family: $ffamily_accent;
     text-transform: uppercase;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;  
+}  
 p {
-    font-size: $fsize_paragraph;
-    color: $text_color_lvl_1;
-    font-family: $ffamily_primary;
-    margin-bottom: 26px;
-    line-height: 26px;
+    color: $text_color_lvl_1;      
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        padding: 88px 24px 88px 24px;
+    }
+    .card {       
+        max-width: 100%; 
+        min-height: 442px;       
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    .cards-container { 
+        max-width: 327px;      
+        flex-direction: column;
+        
+    }
 }

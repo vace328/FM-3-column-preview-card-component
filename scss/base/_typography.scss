@@ -1,0 +1,12 @@
+h2 {
+    font-size: $fsize_heading;    
+    font-family: $ffamily_accent;
+    letter-spacing: .8px;
+}
+a, div, p {
+    font-family: $ffamily_primary;
+    font-size: $fsize_paragraph;   
+}
+p {
+   line-height: 1.68;    
+}
