@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://vace328.github.io/FM-3-column-preview-card-component/)
+[Demo](https://vace328.github.io/FM-3-column-preview-card-component/)
 
 ## My process
 
