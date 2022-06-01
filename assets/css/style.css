@@ -219,7 +219,7 @@ img {
 }
 
 h2 {
-  color: #f2f2f2;
+  color: rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
   margin-bottom: 30px;
 }

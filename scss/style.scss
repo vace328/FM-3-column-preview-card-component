@@ -14,7 +14,7 @@
  
 body {
     box-sizing: border-box;
-    background-color: $bg_color_neutral;
+    background-color: $color_neutral;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -44,15 +44,15 @@ h1 {
     flex-flow: column nowrap;
 }
 .card:nth-of-type(1) {
-    background-color: $bg_color_1;
+    background-color: $color_1;
     // border-top-left-radius: 8px;    
     // border-bottom-left-radius: 8px;    
 }
 .card:nth-of-type(2) {
-    background-color: $bg_color_2;    
+    background-color: $color_2;    
 }
 .card:nth-of-type(3) {
-    background-color: $bg_color_3; 
+    background-color: $color_3; 
     // border-top-right-radius: 8px;    
     // border-bottom-right-radius: 8px;   
 }
@@ -75,7 +75,7 @@ img {
     height: 100%;
 }
 h2 {
-    color: $text_color_lvl_2;
+    color: $text_color_lvl_1;
     text-transform: uppercase;
     margin-bottom: 30px;  
 }  
