@@ -1,0 +1,139 @@
+/*----------  base
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------  components
+------------------------------------------------------------------------------*/
+/*----------  layout
+------------------------------------------------------------------------------*/
+body {
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+h1 {
+  visibility: hidden;
+  position: fixed;
+  z-index: 0;
+}
+
+.cards-container {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 310px;
+  flex: 1 1 310px;
+}
+
+.card:nth-of-type(1) {
+  background-color: #e38826;
+}
+
+.card:nth-of-type(2) {
+  background-color: #006970;
+}
+
+.card:nth-of-type(3) {
+  background-color: #004241;
+}
+
+.card-item {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.icon-container.card-item {
+  margin-top: 48px;
+}
+
+.btn-wrapper.card-item {
+  margin-bottom: 48px;
+}
+
+.icon-container {
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+img {
+  height: 100%;
+}
+
+h2 {
+  font-size: 38px;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca";
+  margin-bottom: 26px;
+  line-height: 26px;
+}
+/*# sourceMappingURL=style.css.map */

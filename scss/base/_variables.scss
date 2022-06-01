@@ -1,0 +1,25 @@
+// ----- Font family-----
+$ffamily_primary: 'Lexend Deca';
+$ffamily_accent: 'Big Shoulders Display';
+
+// ----- Font size-----
+$fsize_paragraph: 15px;
+$fsize_heading: 38px;
+
+
+// ----- Background color-----
+$bg_color_neutral: #F2F2F2;
+$bg_color_1: hsl(31, 77%, 52%);
+$bg_color_2: hsl(184, 100%, 22%);
+$bg_color_3: hsl(179, 100%, 13%);
+
+// ----- Text color-----
+// paragraphs
+$text_color_lvl_1:hsla(0, 0%, 100%, 0.75); 
+// background, headings, buttons
+$text_color_lvl_2:hsl(0, 0%, 95%);
+
+
+// ----- Break points -----
+$small: 375px;
+$large: 1440px;
